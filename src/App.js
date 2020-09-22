@@ -26,8 +26,8 @@ class App extends Component{
       <Router>
           <div>
             <Route exact path='/ClientDashBoard' component={ClientDashBoard} />
-            <Route exact path='/Home' component={Home} />
-            <Route exact path='/' component={Hello} />
+            <Route exact path='/' component={Home} />
+            
           </div>
         </Router>
         </div>
