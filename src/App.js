@@ -1,26 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import ClientDashBoard from './Classes/ClientDashboard.js'
+import Home from './Classes/Home.js'
+import Hello from './Classes/Hello.js'
+import { useHistory } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component{
+
+
+  constructor() {
+    super();
+    //window.location='/Home'
+  
+  }
+  
+
+
+  render() {
+    return (
+      <div>
+      <Router>
+          <div>
+            <Route exact path='/ClientDashBoard' component={ClientDashBoard} />
+            <Route exact path='/Home' component={Home} />
+            <Route exact path='/' component={Hello} />
+          </div>
+        </Router>
+        </div>
+  
+      
+    );
+  }
 }
+
 
 export default App;
