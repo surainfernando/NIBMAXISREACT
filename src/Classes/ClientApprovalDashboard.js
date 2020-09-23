@@ -2,8 +2,8 @@ import React from 'react';
 //import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css"
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+import "./AdminDashboard.css"
+
 
 
 
@@ -65,66 +65,52 @@ displayPrompt()
           <div className="col-sm-8 col-sm-offset-2">
             <div className="panel panel-primary">
               <div className="panel-heading">
-               <h2> Book Appointment</h2>
-               <div>
-               <Calendar
-                 onChange={this.onChange}
-                 value={this.state.date}
-                 minDate={new Date()}
-               />
-             </div>
-             <br></br> 
-             <h3> Pick Appointment Time Slot</h3>
-             <br></br>
-             <table class="table">
-             <thead>
+               <h1>Appointment Status</h1>
+               
+               <table class="table">
+               <thead>
+                 <tr>
+              
+                   <th scope="col">Date</th>
+                   <th scope="col">Time</th>
+                   <th scope="col">Reason For Meeting</th>
+                   <th scope="col">Appointment Status</th>
+         
+                   
+                 </tr>
+               </thead>
+               <tbody>
                <tr>
+                   
+               <td>4/10/2020</td>
+               <td>12.45 pm</td>
+               <td>Road Damage Complaint</td>
+               <td class="booked2">Meeting Approved</td>
             
-                 <th scope="col">Morning</th>
-                 <th scope="col">Afternoon</th>
+  
+              
+             </tr>
+               <tr>
+                   
+               <td>5/10/2020</td>
+               <td>9.30 am</td>
+               <td>Road Damage group Discussion</td>
+               <td class="booked1">Appointment Approval Pending</td>
+            
+
+              
+             </tr>
+          
                  
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 
-                 <td>9.30 am</td>
-                 <td>12.45 pm</td>
                 
-               </tr>
-               <tr>
-                 
-                 <td class="booked">9.45 am</td>
-                 <td>1.00 pm</td>
-                
-               </tr>
-               <tr>
-                
-                 <td>10.00 am</td>
-                 <td class="booked">1.15 pm</td>
-               
-               </tr>
-               <tr>
-                
-                 <td>10.15 am</td>
-                 <td>1.30 pm</td>
-               
-               </tr>
-               <tr>
-                
-                 <td>10.30 am</td>
-                 <td>1.45 pm</td>
-               
-               </tr>
-             </tbody>
-           </table>
+               </tbody>
+             </table>
+             
               </div>
               
             </div>
           </div>
-          <button onClick={this.displayPrompt}>
-  Activate Lasers
-</button>
+   
         </div>
       );
     
