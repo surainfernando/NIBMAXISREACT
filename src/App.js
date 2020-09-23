@@ -8,6 +8,8 @@ import ClientRegister from './Classes/ClientRegister.js'
 import AdminLogin from './Classes/AdminLogin.js'
 import AdminDashboard from './Classes/AdminDashboard.js'
 import ClientApprovalDashboard from './Classes/ClientApprovalDashboard.js'
+import Clientprofile from './Classes/Clientprofile.js'
+import Adminstratorprofile from './Classes/AdminstratorProfile.js'
 import Hello from './Classes/Hello.js'
 import { useHistory } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -42,6 +44,9 @@ class App extends Component{
             <Route exact path='/Admin/Login' component={AdminLogin} />
             <Route exact path='/Admin/DashBoard' component={AdminDashboard} />
             <Route exact path='/ClientApproval' component={ClientApprovalDashboard} />
+            <Route exact path='/ClientProfile' component={Clientprofile} />
+            <Route exact path='/Admin/Profile' component={Adminstratorprofile} />
+
 
          
             

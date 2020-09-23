@@ -77,32 +77,32 @@ export default class Login extends React.Component {
               
               </div>
               <div className="panel-body">
-                <h1>User profile</h1>
+                <h1>Adminstrator profile</h1>
                 <table class="table">
               
                 <tbody>
                 <tr>
                     
                 <td>Name</td>
-                <td>John Perera</td>
+                <td>George Rolf</td>
             
               </tr>
                 <tr>
                     
                 <td>Address</td>
-                <td>8th Street, Kandy</td>
+                <td>9th Street, Kandy</td>
            
               </tr>
               <tr>
                     
                 <td>Telephone Number</td>
-                <td>0311234567</td>
+                <td>0777654321</td>
            
               </tr>
               <tr>
                     
                 <td>Email</td>
-                <td>ss@gmail.com</td>
+                <td>georgerolf@gmail.com</td>
            
               </tr>
            
